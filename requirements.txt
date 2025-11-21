@@ -1,0 +1,7 @@
+streamlit
+yfinance
+pandas
+numpy
+datetime
+streamlit_calendar
+pandas_market_calendars
