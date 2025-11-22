@@ -78,7 +78,7 @@ def calculate_zigzag(df, deviation_percent=5):
 # 2. EVENT GENERATION (DYNAMIC EXCHANGE)
 # ==========================================
 def generate_calendar_events(pivots, df_index, exchange_code):
-    cycles = [36, 81, 99, 144, 360, 411, 822, 1644, 720, 1440]
+    cycles = [36, 81, 99, 144, 360, 411, 822, 1644, 720, 1440, 333, 999]
     events = []
     
     # --- A. Get the Correct Calendar ---
@@ -260,4 +260,5 @@ if st.session_state['calendar_events']:
                 data=csv,
                 file_name=f'{ticker_input}_pivots.csv',
                 mime='text/csv',
+
             )
